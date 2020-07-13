@@ -1,0 +1,31 @@
+<mat-card class="cardPrincipal">
+    <mat-card-header class="cardHeader">
+        <h2 mat-title class="title"> S'enregistrer </h2>
+    </mat-card-header>
+    <mat-card-content class="cardCenter">
+        <form [formGroup]="getNewUser" class="form" (ngSubmit)="subscribe()">
+            <mat-form-field>
+                <input matInput formControlName="pseudo" placeholder="Choississez un pseudo">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput formControlName="name" placeholder="Entrez votre prenom">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput formControlName="surname" placeholder="Entrez votre nom">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="email" formControlName="email" placeholder="Entrez votre email">
+            </mat-form-field>
+            <mat-form-field>
+                <input type="password" matInput formControlName="password" placeholder="Votre mot de passe" />
+            </mat-form-field>
+            <mat-form-field>
+                <input type="password" matInput formControlName="cpwd" placeholder="Confirmez votre mot de passe" />
+            </mat-form-field>
+            <button mat-raised-button color="primary" class="submit"  [disabled]="!getNewUser.valid" type="submit"> Se Connecter </button>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button class="back" routerLink="/Acceuil"> Cancel</button>
+    </mat-card-actions>
+</mat-card>

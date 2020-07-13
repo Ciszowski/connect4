@@ -1,0 +1,29 @@
+.cardPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60vw;
+    background-color: #71807D;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    padding: 10%
+    
+}
+body,*{
+    font-family: "Allura-Regular";
+}
+.cardHeader{
+    background-color: #913838;
+    display: flex;
+    justify-content: center;
+    padding: 15px
+}
+button, .form > button{
+    background-color: #913838;
+    color: #c8d0BB;
+    padding: 15px;
+}

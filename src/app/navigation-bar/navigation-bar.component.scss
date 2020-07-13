@@ -1,0 +1,21 @@
+#navigBar{
+    display: flex;
+    flex-direction: row;
+    background-color: #71807D;
+    margin : 0
+}
+mat-toolbar-row:nth-child(3){
+    justify-content: flex-end
+}
+
+button{
+    background-color: #26281A;
+    padding: 10px;
+    margin: 0 10px;
+}
+#container{
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    margin: 10px 30%;
+}
