@@ -20,6 +20,9 @@ import { HomeComponent } from './miscellanous/home/home.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { TictactoeComponent } from './game/tictactoe/tictactoe.component';
+import {GameComponent}from './game/game.component'
+import { MiscellanousServices } from 'src/services/miscellanous.service';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     SubscribeComponent,
     HomeComponent,
+    TictactoeComponent,
+    GameComponent,
   ],
   imports: [
     MaterialModule,
@@ -47,7 +52,7 @@ import { HttpClientModule } from '@angular/common/http';
       }
     })
   ],
-  providers: [],
+  providers: [MiscellanousServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,17 +1,23 @@
 <mat-toolbar  id="main-footer">
     <mat-toolbar-row>
-        <p>enter information here to complete footer</p> 
+        <p>Reglement</p> 
     </mat-toolbar-row>
     <mat-toolbar-row>
-        <p>enter information here to complete footer</p> 
+        <p>Faq</p> 
     </mat-toolbar-row>
     <mat-toolbar-row>
-        <p>enter information here to complete footer</p> 
+        <p>contactez-nous</p> 
     </mat-toolbar-row>
     <mat-toolbar-row>
-        <p>enter information here to complete footer</p> 
+        <p>Qui nous sommes</p> 
     </mat-toolbar-row>
     <mat-toolbar-row>
-        <p>enter information here to complete footer</p> 
+        <p>Suivez-nous sur</p>
+        <div *ngFor="let logo of logos">
+            <a href={{logo.url}} 
+                target="_blank">
+                <img src={{logo.location}} alt={{logo.brand}} width="30" height="30" />
+            </a>
+        </div> 
     </mat-toolbar-row>
-</mat-toolbar>
+</mat-toolbar>  

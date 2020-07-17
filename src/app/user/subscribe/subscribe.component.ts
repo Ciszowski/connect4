@@ -24,7 +24,7 @@ export class SubscribeComponent implements OnInit {
       name: ['', Validators.required],
       surname: ['', Validators.required],
       password: ['', Validators.required],
-      cpwd: ['', Validators.required],
+      cpwd: ['', Validators.required], //verification password
       email: ['', Validators.required]
     })
   }

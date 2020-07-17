@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MiscellanousServices } from 'src/services/miscellanous.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  logos : any[]
+  constructor(private miscService : MiscellanousServices) { }
 
   ngOnInit() {
+    this.logos = this.miscService.getLogo()
+    console.log(this.logos)
   }
+
 
 }

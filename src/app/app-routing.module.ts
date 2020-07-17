@@ -4,6 +4,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { LoginComponent } from './user/login/login.component';
 import { SubscribeComponent } from './user/subscribe/subscribe.component';
 import { HomeComponent } from './miscellanous/home/home.component';
+import { GameComponent } from './game/game.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
     children: [
       { path : "", component: HomeComponent},
       { path: "Login", component: LoginComponent },
-      { path: "Subscribe", component: SubscribeComponent }
+      { path: "Subscribe", component: SubscribeComponent },
+      { path : "Game", component: GameComponent}
     ]
   },
 

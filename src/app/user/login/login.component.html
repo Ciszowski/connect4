@@ -5,6 +5,9 @@
     <mat-card-content class="cardCenter">
         <form [formGroup]="getUser" class="form" (ngSubmit)="login()" >
             <mat-form-field>
+                <input matInput formControlName="email" placeholder="Votre email">
+            </mat-form-field>
+            <mat-form-field>
                 <input matInput formControlName="pseudo" placeholder="Votre pseudo">
             </mat-form-field>
             <mat-form-field>

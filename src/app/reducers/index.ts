@@ -6,15 +6,18 @@ import {
   MetaReducer
 } from '@ngrx/store';
 import { environment } from '../../environments/environment';
-import { redAuth}  from "./redAuth";
+import { redAuth } from "./redAuth";
+import { redGame } from "./redGame"
 
 
 export interface State {
-  redAuth : redAuth
+  redAuth : redAuth,
+  redGame: redGame
 }
 
 export const reducers: ActionReducerMap<State> = {
-  redAuth: redAuth
+  redAuth: redAuth,
+  redGame: redGame
 };
 
 
