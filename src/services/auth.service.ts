@@ -30,7 +30,7 @@ export class AuthServices {
                 sessionStorage.setItem('token',btoa(user.toString()))
                 this.router.navigate(["Acceuil","Game"])
             }else{
-                console.log("Erreur d'authentification")
+                console.log("Erreur d'authentification!")
             }
         })  
     }
